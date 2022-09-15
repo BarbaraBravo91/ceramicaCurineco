@@ -82,7 +82,6 @@ h2 {
 
 .flexCaja {
     background-color: #3c6e71;
-    height: 700px;
 
     display: flex;
     flex-flow: row wrap;
@@ -185,31 +184,23 @@ img {
     grid-area: menu;
 }
 
-.spacer {
-    height: 20px;
-    width: 100%;
-}
 
 .fede {
     display: flex;
-    margin: 0 -1%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 -10px;
 }
 
 .fede fieldset {
-
-    margin: 0 1%;
     text-align: center;
     padding: 20px 10px 10px;
+    width: 280px;
+    margin: 10px;
 }
 
-@media only screen and (max-width:600px) {
-    body {
-        background-color: lightblue;
-
-    }
+@media only screen and (max-width: 767px) {
+   .fede fieldset {
+      width: 100%;
+   }
 }
-
-@media only screen and (max-with:991px)
-{ header{
-    background-position: center;
-}}
