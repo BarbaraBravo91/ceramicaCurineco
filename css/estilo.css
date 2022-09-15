@@ -211,5 +211,5 @@ img {
 
 @media only screen and (max-with:991px)
 { header{
-    
+    background-position: center;
 }}
