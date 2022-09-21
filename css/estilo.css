@@ -94,7 +94,7 @@ h2 {
 }
 
 
-img {
+img{
     height: 200px;
     width: 200px;
 
@@ -103,13 +103,6 @@ img {
 .img2{
     height: 600px;
     width: 600px;
-}
-.navbar-nav {
-    color:#284b63
-}
-
-.nav-link-active{
-    color:#3c6e71
 }
 
 
@@ -217,3 +210,9 @@ img {
    }
 }
 .bg-lav{background-color: lavender;}
+
+@media (max-width:700px)and(min-width:400px){
+    .miestilo{
+        text align:left: 
+    }
+}
