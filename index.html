@@ -9,12 +9,239 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/estilo.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@1,600&display=swap"
+    rel="stylesheet">
 
 </head>
+
+<body id="colorFondo">
+
+  <nav class="navbar navbar-expand-lg bg-lav">
+    <div class="container-fluid justify-content-end">
+      <a class="navbar-brand" href="#"> <img src="multimedia/curilogo.jpeg" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paginas/historia.html">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paginas/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paginas/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="paginas/nosencontrasen.html">Nos encontras en</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <h1 class="text-center">CURINECO</h1>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="multimedia/tres.jpeg" class="d-block w-100 img2" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="multimedia/caritas.jpeg" class="d-block w-100 img2" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="multimedia/arriba.jpeg" class="d-block w-100 img2" alt="">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container-fluid mb-5">
+
+    <h1 class=" text-center h3 mt-4">Productos destacados</h1>
+
+    <div class="row justify-content-around">
+      <div class="card col-4" style="width: 18rem;">
+        <img src="multimedia/gatito1 (1).jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card col-md-6" style="width: 18rem;">
+        <img src="multimedia/caritas.jpeg" class="card-img-top " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card col-10" style="width: 18rem;">
+        <img src="multimedia/desde_mi_pecho.jpeg" class="card-img-top " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <section class="container-fluid mb-5">
+    <h2 class="text-center h3 mt-4 mb-4 ">Novedades</h2>
+    <div class="row">
+      <div class="card col-6" style="width: 18rem;">
+        <img src="multimedia/pachita.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+
+      <div class="accordion accordion-flush col-6" id="accordionFlushExample">
+        <div class="accordion-item ">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item ">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+              filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item ">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+              happening here in terms of content, but just filling up the space to make it look, at least at first
+              glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<div class="row">
+
+      <div class="alert alert-success col-lg-4 col-6" role="alert">
+        A simple success alert—check it out!
+      </div>
+
+      <div class="col-lg-">
+
+        <div class="accordion accordion-flush col-lg-6 col-md-6" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the first item's accordion body.
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h3>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+                filled with some actual content.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                happening here in terms of content, but just filling up the space to make it look, at least at first
+                glance, a bit more representative of how this would look in a real-world application.
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <img src="multimedia/desde_mi_pecho.jpeg" class="img-fluid cl-lg-4 col-md-12" alt="">
+
+
+      </div>
+
+    </div> -->
+  </section>
+
+  <footer class="text-center">CURINECO 2022</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+
 
 <!--<body id="colorFondo">
 
@@ -79,175 +306,5 @@
             <p>Envío de puerta a puerta</p>
         </fieldset>
     </div> -->
-
-<body id="colorFondo">
-
-  <nav class="navbar navbar-expand-lg bg-lav">
-    <div class="container-fluid justify-content-end">
-      <a class="navbar-brand" href="#"> <img src="multimedia/curilogo.jpeg" alt="Logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav mx-5">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="" href="index.html">Home</a>
-          </li>
-          <li class="nav-item mx-5">
-            <a class="nav-link" href="paginas/historia.html">Historia</a>
-          </li>
-          <li class="nav-item mx-5">
-            <a class="nav-link" href="paginas/productos.html">Productos</a>
-          </li>
-          <li class="nav-item mx-5">
-            <a class="nav-link" href="paginas/contacto.html">Contacto</a>
-          </li>
-          <li class="nav-item mx-5">
-            <a class="nav-link" href="paginas/nosencontrasen.html">Nos encontras en</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <header>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="multimedia/tres.jpeg" class="d-block w-100 img2" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="multimedia/caritas.jpeg" class="d-block w-100 img2" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="multimedia/arriba.jpeg" class="d-block w-100 img2" alt="">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </header>
-
-  <main class="container-fluid mb-5">
-
-    <h2 class="text-center h3 mt-4">Productos destacados</h2>
-
-    <div class="row justify-content-around">
-      <div class="card col-4" style="width: 18rem;">
-        <img src="multimedia/gatito1 (1).jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card col-md-6" style="width: 18rem;">
-        <img src="multimedia/caritas.jpeg" class="card-img-top " alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card col-10" style="width: 18rem;">
-        <img src="multimedia/desde_mi_pecho.jpeg" class="card-img-top " alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-
-  </main>
-
-
-
-  <section class="container-fluid mb-5">
-
-    <h3 class="text-center h3 mt-4 mb-4">Novedades</h3>
-    <div class="row">
-
-      <div class="alert alert-success col-lg-4 col-md-6" role="alert">
-        A simple success alert—check it out!
-      </div>
-
-      <div class="col-lg-4">
-
-        <div class="accordion accordion-flush col-lg-4 col-md-6" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Accordion Item #1
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-              data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                <code>.accordion-flush</code> class. This is the first item's accordion body.
-              
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Accordion Item #2
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-              data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
-                filled with some actual content.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                Accordion Item #3
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-              data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-                happening here in terms of content, but just filling up the space to make it look, at least at first
-                glance, a bit more representative of how this would look in a real-world application.
-              </div>
-            </div>
-          </div>
-        </div>
-
-       
-        <img src="multimedia/desde_mi_pecho.jpeg" class="img-fluid cl-lg-4 col-md-12" alt="">
-
-
-      </div>
-
-    </div>
-  </section>
-
-  <footer class="text-center">CURINECO 2022</footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
-</body>
 
 </html>
