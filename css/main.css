@@ -1,3 +1,50 @@
+/*condicionales*/
+.flexCaja {
+  background-color: #3c6e71;
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: center; }
+  .flexCaja .flexTitulo {
+    background-color: #284b63;
+    text-align: center;
+    font-size: 30px; }
+
+.imagen1 {
+  grid-area: imagen1; }
+
+.imagen2 {
+  grid-area: imagen2; }
+
+.imagen3 {
+  grid-area: imagen3; }
+
+.imagen4 {
+  grid-area: imagen4; }
+
+.imagen5 {
+  grid-area: imagen5; }
+
+.imagen6 {
+  grid-area: imagen6; }
+
+body {
+  overflow-x: hidden;
+  /*FUENTE*/
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Montserrat', sans-serif; }
+  body h1 {
+    color: #4A4E69;
+    font-family: 'Bebas Neue', cursive; }
+  body h2 {
+    color: #3c6e71;
+    font-family: 'Montserrat', sans-serif; }
+  body #colorFondo {
+    background-color: #C9ADA7; }
+
 .cajacontenedora {
   height: 1000px;
   display: flex;
@@ -7,3 +54,56 @@
   justify-content: space-between; }
   .cajacontenedora .cajacontenedoraDos {
     background-color: #d9d9d9; }
+
+img {
+  height: 200px;
+  width: 200px; }
+
+.bg-lav {
+  background-color: #9A8C98; }
+
+img {
+  height: 200px;
+  width: 200px; }
+
+.img2 {
+  height: 600px;
+  width: 600px; }
+
+.menuDos {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+
+.padreGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "logo titulo menu" "texto texto texto" "imagen1 imagen2 imagen3" "imagen4 imagen5 imagen6" ". footer .";
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  align-content: center;
+  justify-content: center; }
+
+.TituloPrincipal {
+  display: grid;
+  flex-direction: center;
+  justify-content: center; }
+
+.logo {
+  grid-area: logo; }
+
+.titulo {
+  grid-area: titulo; }
+
+.texto {
+  grid-area: texto; }
+
+.footer {
+  grid-area: footer; }
+
+.menuPrincipal {
+  grid-area: menu; }

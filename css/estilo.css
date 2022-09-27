@@ -9,7 +9,16 @@ body {
 
     font-family: 'Bebas Neue', cursive;
     font-family: 'Montserrat', sans-serif;
-
+    h1 {
+        color: #4A4E69;
+    
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+        h2 {
+        color: #3c6e71;
+        font-family: 'Montserrat', sans-serif;
+    }
 
 }
 
@@ -18,16 +27,7 @@ body {
 
 }
 
-h1 {
-    color: #4A4E69;
-  
-    font-family: 'Bebas Neue', cursive;
-}
 
-h2 {
-    color: #3c6e71;
-    font-family: 'Montserrat', sans-serif;
-}
 
 
 .cajacontenedora {
@@ -70,6 +70,10 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
 
+    img {
+        height: 200px;
+        width: 200px;
+    }
 }
 
 
@@ -96,13 +100,13 @@ h2 {
 }
 
 
-img{
+img {
     height: 200px;
     width: 200px;
 
 }
 
-.img2{
+.img2 {
     height: 600px;
     width: 600px;
 }
@@ -207,27 +211,29 @@ img{
 }
 
 @media only screen and (max-width: 767px) {
-   .fede fieldset {
-      width: 100%;
-   }
+    .fede fieldset {
+        width: 100%;
+    }
 }
-.bg-lav{background-color: #9A8C98;}
 
-@media screen (max-width:700px)and(min-width:400px){
-    .miestilo{
-        text align:left: 
+.bg-lav {
+    background-color: $colorsecundario;
+}
+
+@media screen (max-width:700px)and(min-width:400px) {
+    .miestilo {
+        text align: left:
     }
 }
 
 .subrrallado {
-    background-image: linear-gradient(120deg, #134E5E,#71B280 100%);
+    background-image: linear-gradient(120deg, #134E5E, #71B280 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.1em;
     background-position: 0 80%;
     transition: background-size 0.25s ease-in;
-  }
+}
 
-  .subrrallado:hover {
+.subrrallado:hover {
     background-size: 100% 88% !important;
-  }
-
+}
