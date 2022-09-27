@@ -12,21 +12,22 @@ body {
 
     font-family: 'Bebas Neue', cursive;
     font-family: 'Montserrat', sans-serif;
+
     h1 {
         color: #4A4E69;
-    
+
         font-family: 'Bebas Neue', cursive;
     }
-    
-        h2 {
+
+    h2 {
         color: #3c6e71;
         font-family: 'Montserrat', sans-serif;
     }
-    
-#colorFondo {
-    background-color: #C9ADA7;
 
-}
+    #colorFondo {
+        background-color: $colorFondo;
+
+    }
 
 
 }
@@ -42,19 +43,19 @@ body {
 
     .cajacontenedoraDos {
         background-color: #d9d9d9;
-}
+    }
 }
 
 img {
     height: 200px;
     width: 200px;
-  
-  }
-  
-  
-  .bg-lav {
+
+}
+
+
+.bg-lav {
     background-color: $colorsecundario;
-  }
+}
 
 
 
