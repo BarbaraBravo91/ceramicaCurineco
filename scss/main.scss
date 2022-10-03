@@ -4,6 +4,10 @@
 @import "flex";
 @import "img";
 
+html {
+    font-size: 62, 5%;
+}
+
 
 body {
     overflow-x: hidden;
@@ -46,30 +50,19 @@ body {
     }
 }
 
-img {
+.img {
     height: 200px;
     width: 200px;
 
-}
-
-
-.bg-lav {
+  bg-lav {
     background-color: $colorsecundario;
 }
-
-
-
-img {
-    height: 200px;
-    width: 200px;
-
-}
-
-.img2 {
+  img2 {
     height: 600px;
     width: 600px;
 }
 
+}
 
 .menuDos {
 
@@ -99,7 +92,6 @@ img {
     justify-items: stretch;
     align-content: center;
     justify-content: center;
-}
 
 .TituloPrincipal {
 
@@ -123,8 +115,46 @@ img {
 
 .footer {
     grid-area: footer;
+    width: auto;
+}
+.section {
+    width: auto;
 }
 
 .menuPrincipal {
     grid-area: menu;
+
+.fede {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+ .fede fieldset {
+    text-align: center;
+    padding: 20px 10px 10px;
+    width: 280px;
+    margin: 10px;
+}
+}
+
+@media only screen and (max-width: 767px) {
+    .fede fieldset {
+        width: 100%;
+    }
+}
+
+.bg-lav {
+    background-color: $colorsecundario;
+}
+
+.subrrallado {
+    background-image: linear-gradient(120deg, #134E5E, #71B280 100%);
+    background-repeat: no-repeat;
+    background-size: 50% 0.1em;
+    background-position: 0 80%;
+    transition: background-size 0.25s ease-in;
+}
+
+.subrrallado:hover {
+    background-size: 100% 88% !important;
 }

@@ -6,3 +6,79 @@ $colorterciario: #134E5E;
 $tamanoTexto:20px;
 
 $colorFondo: #C9ADA7;
+
+$cajacompleta: 500x;
+
+.footer{
+    width: $cajacompleta;
+
+}
+
+.section{
+    width: ($cajacompleta/2)+50;
+}
+
+
+@each $productos in arriba,tres,luna {
+    .#{$productos}{
+        background-image: url(../multimedia/#{$productos}.jpeg);
+    }
+
+
+
+$redes: (
+    twitter: blue,
+    facebook: lightblue,
+    whatsapp: green
+);
+
+@each $red , $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
+
+
+
+$fiesta:madre;
+body{
+    @if $fiesta == madre{
+        background-color: antiquewhite;
+        } @else if $fiesta == navidad{
+            backface-color:$colorterciario;
+        
+        }@else if $fiesta == pascuas{
+            background-color: #9A8C98;
+        } @else {
+            background-color: #134E5E;
+        }
+    }
+
+
+@mixin sizes($width, $height){
+    width:$width;
+    height: $height;
+}
+
+.img{
+    @include sizes(200px, 300px)
+}
+
+.logo{
+    @include sizes (200px, 50px)
+}
+
+$estilos:(
+    color:#9A8C98,
+    alineacion: center, 
+    fuente:30px,
+    padding:1rem
+);
+
+.cajaMap{
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, alineacion);
+    font-size: map-get ($estilos, fuente);
+    padding: map-get ($estilos, padding);
+   
+};

@@ -30,6 +30,9 @@
 .imagen6 {
   grid-area: imagen6; }
 
+html {
+  font-size: 62, 5%; }
+
 body {
   overflow-x: hidden;
   /*FUENTE*/
@@ -57,17 +60,11 @@ body {
 img {
   height: 200px;
   width: 200px; }
-
-.bg-lav {
-  background-color: #9A8C98; }
-
-img {
-  height: 200px;
-  width: 200px; }
-
-.img2 {
-  height: 600px;
-  width: 600px; }
+  img bg-lav {
+    background-color: #9A8C98; }
+  img img2 {
+    height: 600px;
+    width: 600px; }
 
 .menuDos {
   display: flex;
@@ -80,29 +77,55 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "logo titulo menu" "texto texto texto" "imagen1 imagen2 imagen3" "imagen4 imagen5 imagen6" ". footer .";
+  grid-template-areas: "logo titulo menu"
+ "texto texto texto"
+ "imagen1 imagen2 imagen3"
+ "imagen4 imagen5 imagen6"
+ ". footer .";
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   justify-items: stretch;
   align-content: center;
   justify-content: center; }
+  .padreGrid .TituloPrincipal {
+    display: grid;
+    flex-direction: center;
+    justify-content: center; }
+  .padreGrid .logo {
+    grid-area: logo; }
+  .padreGrid .titulo {
+    grid-area: titulo; }
+  .padreGrid .texto {
+    grid-area: texto; }
+  .padreGrid .footer {
+    grid-area: footer; }
+  .padreGrid .menuPrincipal {
+    grid-area: menu; }
 
-.TituloPrincipal {
-  display: grid;
-  flex-direction: center;
-  justify-content: center; }
+.fede {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 -10px; }
+  .fede .fede fieldset {
+    text-align: center;
+    padding: 20px 10px 10px;
+    width: 280px;
+    margin: 10px; }
 
-.logo {
-  grid-area: logo; }
+@media only screen and (max-width: 767px) {
+  .fede fieldset {
+    width: 100%; } }
 
-.titulo {
-  grid-area: titulo; }
+.bg-lav {
+  background-color: #9A8C98; }
 
-.texto {
-  grid-area: texto; }
+.subrrallado {
+  background-image: linear-gradient(120deg, #134E5E, #71B280 100%);
+  background-repeat: no-repeat;
+  background-size: 50% 0.1em;
+  background-position: 0 80%;
+  transition: background-size 0.25s ease-in; }
 
-.footer {
-  grid-area: footer; }
-
-.menuPrincipal {
-  grid-area: menu; }
+.subrrallado:hover {
+  background-size: 100% 88% !important; }
