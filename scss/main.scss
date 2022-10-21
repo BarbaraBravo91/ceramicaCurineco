@@ -181,3 +181,10 @@ hr{
     border-style: inset;
     border-width: 1px;
 }
+
+
+.carousel {
+    img{
+        object-fit: cover;
+    }
+}
