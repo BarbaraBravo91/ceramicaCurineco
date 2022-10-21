@@ -80,6 +80,7 @@ body {
     justify-items: stretch;
     align-content: center;
     justify-content: center;
+}
 
 .TituloPrincipal {
 
@@ -124,6 +125,7 @@ body {
     margin: 10px;
 }
 }
+}
 
 @media only screen and (max-width: 767px) {
     .fede fieldset {
@@ -142,5 +144,23 @@ body {
     background-position: 0 80%;
     transition: background-size 0.25s ease-in
 }
+
+.card-img-top{
+    transition: transform .5s;
+    &:hover{
+        transform: scale (1.1);
+    }
+}
+
+.footer{
+    background-color: #4A4E69;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn-primary{
+    background-color: #4A4E69;
+   
 
 }
