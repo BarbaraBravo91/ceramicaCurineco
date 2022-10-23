@@ -64,33 +64,6 @@ body {
 }
 
 
-@mixin sizes($width, $height) {
-    width: $width;
-    height: $height;
-}
 
-.img {
-    @include sizes(200px, 300px)
-}
 
-.logo {
-    @include sizes (200px, 50px)
-}
-
-$estilos: (
-    color:#9A8C98,
-    alineacion: center,
-    fuente:30px,
-    padding:1rem
-);
-
-.cajaMap {
-    background-color: map-get($estilos, color);
-    text-align: map-get($estilos, alineacion);
-    font-size: map-get ($estilos, fuente);
-    padding: map-get ($estilos, padding);
-
-}
-
-;
 }
