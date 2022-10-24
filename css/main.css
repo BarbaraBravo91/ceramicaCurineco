@@ -49,6 +49,38 @@ body {
 body {
   background-color: antiquewhite; }
 
+@media only screen and (max-width: 1025px) {
+  .productos-destacados .producto {
+    margin: 10px 0; }
+  .productos-destacados .producto:hover img {
+    filter: none; }
+  .productos-destacados .producto:hover .info {
+    opacity: 1; }
+  .productos-destacados img {
+    transition: filter .5s;
+    aspect-ratio: 1; }
+  .productos-destacados .info {
+    position: static;
+    transform: unset;
+    opacity: 1;
+    transition: none;
+    color: #134E5E;
+    text-align: center; } }
+
+@media only screen and (max-width: 991px) {
+  .navbar {
+    padding: 0; }
+    .navbar .navbar-brand {
+      padding: 50px;
+      height: 120px;
+      width: auto; }
+  .nav-link {
+    font-size: 100%;
+    color: #4A4E69;
+    padding: 10px 0; }
+  .subrrallado {
+    background-image: none; } }
+
 .flexCaja {
   background-color: #3c6e71;
   display: flex;
@@ -159,6 +191,9 @@ body {
   .card-img-top:hover {
     transform: scale 1.1; }
 
+.menuprincipal2 {
+  background-color: #3c6e71; }
+
 .footer {
   background-color: #4A4E69;
   color: #71B280;
@@ -189,7 +224,8 @@ hr {
 .navbar img {
   text-align: center;
   height: auto;
-  width: 200px; }
+  width: 200px;
+  background-color: none; }
 
 .productos-destacados .producto {
   position: relative;
@@ -215,6 +251,71 @@ hr {
   color: #d9d9d9;
   text-align: center; }
 
+.align-historia {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 50px; }
+
+.fondoOfertas {
+  padding: 100px;
+  background-color: #f98c8c; }
+
+.iconos {
+  width: 40px;
+  height: 40px;
+  margin: 5px 5px 5px 5px; }
+
+.logoCuri {
+  width: 100px;
+  height: 100px; }
+
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+  border-radius: 50px;
+  box-shadow: 0px 1px 10px black;
+  z-index: 99; }
+  .btn-wsp img {
+    width: 55px;
+    height: auto; }
+    .btn-wsp img:hover {
+      transform: scale(1.1); }
+
+.nav-link {
+  font-weight: bolder;
+  font-size: 150%;
+  color: #d9d9d9;
+  padding: 100px; }
+
+.subrrallado {
+  background-image: linear-gradient(120deg, #CC95C0, #DBD4B4, #7AA1D2 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.1em;
+  background-position: 0 90%;
+  transition: background-size 0.25s ease-in;
+  padding: 0%; }
+
+.subrrallado:hover {
+  background-size: 100% 88% !important; }
+
+.fondo {
+  background-image: url("/multimedia/5564410.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .3; }
+
+.fondoEnvoltorio {
+  position: relative; }
+
 @media only screen and (max-width: 1025px) {
   .productos-destacados .producto {
     margin: 10px 0; }
@@ -233,52 +334,16 @@ hr {
     color: #134E5E;
     text-align: center; } }
 
-.align-historia {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: 50px; }
-
-.fondoOfertas {
-  padding: 100px;
-  background-color: #f98c8c; }
-
-.iconos {
-  width: 40px;
-  height: 40px;
-  margin: 5px 5px 5px 5px; }
-
-.bordes {
-  border: dashed 4px #3c6e71;
-  margin: auto;
-  padding: 50px; }
-
-.logoCuri {
-  width: 100px;
-  height: 100px; }
-
-.fancy-undeline {
-  background-image: linear-gradient(120deg, #ec008c, #fc6767 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.3em;
-  background-position: 0 80%;
-  transition: background-size 0.25s ease-in; }
-
-.fancy-undeline:hover {
-  background-size: 100% 88% !important; }
-
-.btn-wsp {
-  position: fixed;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  bottom: 30px;
-  right: 30px;
-  color: #fff;
-  border-radius: 50px;
-  box-shadow: 0px 1px 10px black;
-  z-index: 99; }
-  .btn-wsp img {
-    width: 55px;
-    height: auto; }
-    .btn-wsp img:hover {
-      transform: scale(1.1); }
+@media only screen and (max-width: 991px) {
+  .navbar {
+    padding: 0; }
+    .navbar .navbar-brand {
+      padding: 50px;
+      height: 120px;
+      width: auto; }
+  .nav-link {
+    font-size: 100%;
+    color: #4A4E69;
+    padding: 10px 0; }
+  .subrrallado {
+    background-image: none; } }
