@@ -143,14 +143,6 @@ body {
     background-color: $colorsecundario;
 }
 
-.subrrallado {
-    background-image: linear-gradient(120deg, #134E5E, #71B280 100%);
-    background-repeat: no-repeat;
-    background-size: 50% 0.1em;
-    background-position: 0 80%;
-    transition: background-size 0.25s ease-in
-}
-
 .card-img-top {
     transition: transform .5s;
 
@@ -200,6 +192,7 @@ hr {
         text-align: center;
         height: auto;
         width: 200px;
+
     }
 }
 
@@ -233,7 +226,7 @@ hr {
         transform: translate(-50%, -50%);
         opacity: 0;
         transition: opacity .5s;
-        color:#d9d9d9;
+        color: #d9d9d9;
         text-align: center;
     }
 
@@ -245,41 +238,90 @@ hr {
         .producto {
             margin: 10px 0;
         }
-    
+
         .producto:hover {
             img {
                 filter: none;
             }
-    
+
             .info {
                 opacity: 1;
             }
         }
-    
+
         img {
             transition: filter .5s;
             aspect-ratio: 1;
         }
-    
+
         .info {
-            position:static;
+            position: static;
             transform: unset;
             opacity: 1;
             transition: none;
-            color:#134E5E;
+            color: #134E5E;
             text-align: center;
         }
     }
 }
 
-.align-historia{
+.align-historia {
     margin-top: 0;
     margin-bottom: 1rem;
     padding: 50px;
 }
 
-.fondoOfertas{
-padding: 100px;
-background-color: #f98c8c;
+.fondoOfertas {
+    padding: 100px;
+    background-color: #f98c8c;
 }
 
+.iconos {
+    width: 40px;
+    height: 40px;
+    margin: 5px 5px 5px 5px;
+}
+
+.bordes {
+    border: dashed 4px #3c6e71;
+    margin: auto;
+    padding: 50px;
+}
+
+.logoCuri {
+    width: 100px;
+    height: 100px;
+}
+
+
+.fancy-undeline {
+    background-image: linear-gradient(120deg, #ec008c, #fc6767 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 0 80%;
+    transition: background-size 0.25s ease-in;
+}
+
+.fancy-undeline:hover {
+    background-size: 100% 88% !important;
+}
+
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
+    z-index: 99;
+    img {
+        width: 55px;
+        height: auto;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
