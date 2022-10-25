@@ -321,3 +321,64 @@ opacity: .3;
 .fondoEnvoltorio{
     position: relative;
 }
+
+
+@media only screen and (max-width: 1025px) {
+    .productos-destacados {
+
+        .producto {
+            margin: 10px 0;
+        }
+
+        .producto:hover {
+            img {
+                filter: none;
+            }
+
+            .info {
+                opacity: 1;
+            }
+        }
+
+        img {
+            transition: filter .5s;
+            aspect-ratio: 1;
+        }
+
+        .info {
+            position: static;
+            transform: unset;
+            opacity: 1;
+            transition: none;
+            color: #134E5E;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar {
+        padding: 0;
+
+        .navbar-brand {
+            padding: 50px;
+            height: 120px;
+            width: auto;
+            
+        }
+
+    }
+    .nav-link {
+        font-size: 100%;
+        color: #4A4E69;
+        padding: 10px 0;
+    }
+
+    &.subrrallado{
+   background-image: none;
+
+    }
+
+}
+
+
